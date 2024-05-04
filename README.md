@@ -16,3 +16,18 @@ Berikut adalah beberapa aksi yang dapat Anda gunakan dengan `addEventListener()`
 10. **blur**: Terjadi ketika elemen kehilangan fokus.
 
 Dan masih banyak lagi. Anda dapat menemukan daftar lengkap aksi dan deskripsi mereka di [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Events). Dengan menggunakan `addEventListener()` dengan salah satu dari aksi ini, Anda dapat menangani interaksi pengguna dengan elemen HTML dan meresponsnya dengan cara yang sesuai.
+
+Contoh:
+
+    var passwordField = document.getElementById("password");
+    passwordField.addEventListener("focus", function() {
+    
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        showPasswordIcon.className = "show-password glyphicon glyphicon-eye-close";
+      } else {
+        passwordField.type = "password";
+        showPasswordIcon.className = "show-password glyphicon glyphicon-eye-open";
+      }
+
+    });
