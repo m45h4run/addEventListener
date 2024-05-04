@@ -17,7 +17,7 @@ Berikut adalah beberapa aksi yang dapat Anda gunakan dengan `addEventListener()`
 
 Dan masih banyak lagi. Anda dapat menemukan daftar lengkap aksi dan deskripsi mereka di [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Events). Dengan menggunakan `addEventListener()` dengan salah satu dari aksi ini, Anda dapat menangani interaksi pengguna dengan elemen HTML dan meresponsnya dengan cara yang sesuai.
 
-Contoh:
+Contoh: 
 
     var passwordField = document.getElementById("password");
     passwordField.addEventListener("focus", function() {
